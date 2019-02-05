@@ -1,0 +1,227 @@
+@import './fonts.scss';
+* {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*Styles for titles*/
+.section-title {
+	color: #222;
+	font-family: Big-John;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 145px;
+	text-align: center;
+	position: relative;
+}
+.section-title:after {
+	content: "";
+	position: absolute;
+	bottom: -74px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 85px;
+	height: 2px;
+	background: #222;
+}
+/*Styles for main button*/
+.main-btn {
+	border: 3px solid #fff;
+	padding: 35px 70px;
+	font-family: Amble-Bold;
+	color: #fff;
+	font-size: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.header {
+	position: absolute;
+	z-index: 999;
+	top: 60px;
+	left: 50px;
+	&__navbar {
+		position: relative;
+		cursor: pointer;
+		width: 30px;
+		height: 24px;
+	}
+	&__navbar_item {
+		position: absolute;
+		width: 30px;
+		height: 4px;
+		background: #fff;
+	}
+	&__navbar_item:nth-child(2) {
+		top: 10px;
+	}
+	&__navbar_item:nth-child(3) {
+		top: 20px;
+	}
+	&__nav {
+		display: none;
+	}
+}
+
+.promo {
+	background: url(../assets/promo-overlay.jpg) center top / cover no-repeat;
+	padding: 315px 0 390px;
+	&__info {
+		text-align: center;
+		padding: 0 250px;
+	}
+	&__info_title {
+		font-family: Big-John;
+		color: #fff;
+		font-size: 48px;
+		text-transform: uppercase;
+		margin-bottom: 95px;
+		position: relative;
+	}
+	&__info_title:after {
+		content: "";
+		position: absolute;
+		bottom: -54px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 85px;
+		height: 2px;
+		background: #fff;
+	}
+	&__info_text {
+		font-family: Amble-Regular;
+		color: #fff;
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+.introduction {
+	padding: 120px 0;
+	&__info {
+		padding: 0 200px;
+	}
+	&__info_text {
+		font-family: Amble-Light;
+		font-size: 22px;
+		line-height: 36px;
+		color: #222;
+		text-align: center;
+	}
+}
+
+.creativity {
+	background: url(../assets/creativity-bg.jpg) center top / cover no-repeat;
+	padding: 200px 0;
+	text-align: center;
+}
+
+.work {
+	padding: 115px 0 80px;
+	&__filter_nav {
+		display: flex;
+		flex-flow: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	&__filter_nav__item {
+		color: #222;
+		text-transform: uppercase;
+		font-family: Amble-Light;
+		font-size: 18px;
+		list-style: none;
+		cursor: pointer;
+	}
+	&__filter_nav__item:not(:last-child) {
+		margin-right: 38px;
+	}
+	&__filter_nav__item_active {
+		font-family: Big-John;
+	}
+	&__filter_list {
+		margin-top: 80px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
+	&__filter_item {
+		width: 370px;
+		height: 420px;
+		position: relative;
+		cursor: pointer;
+		overflow: hidden;
+	}
+	&__filter_item::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		display: none;
+	}
+	&__filter_item:nth-child(n+4) {
+		margin-top: 20px;
+	}
+	&__filter_item:hover {
+		outline: 8px solid #000;
+		outline-offset: -8px;
+	}
+	&__filter_item:hover:before, &__filter_item:hover &__filter_item__overlay_block {
+		display: block;
+	}
+	&__filter_item__overlay_block {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		text-align: center;
+		display: none;
+	}
+	&__filter_item__overlay_title {
+		font-family: Big-John;
+		font-size: 18px;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		position: relative;
+	}
+	&__filter_item__overlay_title::after {
+		content: "";
+		position: absolute;
+		bottom: -80px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 48px;
+		height: 3px;
+		background: #d87843;
+	}
+	&__filter_item__overlay_text {
+		font-family: Amble-Regular;
+		font-size: 24px;
+	}
+	&__filter_list__button {
+		background: transparent;
+		border: 3px solid #000;
+		padding: 15px 90px;
+		font-family: Amble-Bold;
+		color: #000;
+		font-size: 24px;
+		display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+		margin: 75px auto 0 auto;
+	}
+}
+.help {
+	background: url(../assets/help-bg.jpg) center top / cover no-repeat;
+	padding: 200px 0;
+	text-align: center;
+}
+
