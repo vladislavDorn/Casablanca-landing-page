@@ -8,6 +8,9 @@
 		<work></work>
 		<help></help>
 		<clients></clients>
+		<about></about>
+		<video-block></video-block>
+		<choose></choose>
 	</div>
 </template>
 
@@ -20,6 +23,9 @@ import Creativity from '../components/CasablancaEn/Creativity.vue'
 import Work from '../components/CasablancaEn/Work.vue'
 import Help from '../components/CasablancaEn/Help.vue'
 import Clients from '../components/CasablancaEn/Clients.vue'
+import About from '../components/CasablancaEn/About.vue'
+import Video from '../components/CasablancaEn/Video.vue'
+import Choose from '../components/CasablancaEn/Choose.vue'
 
 export default {
   components: {
@@ -30,7 +36,10 @@ export default {
     Creativity,
     Work,
     Help,
-    Clients
+    Clients,
+    About,
+    'video-block': Video,
+    Choose
   }
 }
 

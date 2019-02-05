@@ -11,7 +11,7 @@ function resolve (dir) {
 
 
 module.exports = {
-  context: path.resolve(__dirname, '../dist'),
+  context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
   },

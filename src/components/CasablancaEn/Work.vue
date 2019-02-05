@@ -12,7 +12,7 @@
 		</ul>
 		<div class="work__filter_list">
 			<div class="work__filter_item" v-for="filterItem in filterItems">
-				<div class="work__filter_item__image_block"><img src="@/assets/filter-1.png" alt="Filter Image" class="work__filter_item__image"></div>
+				<div class="work__filter_item__image_block"><img src="../../assets/filter-1.png" alt="Filter Image" class="work__filter_item__image"></div>
 				<div class="work__filter_item__overlay_block">
 					<h3 class="work__filter_item__overlay_title">{{ filterItem.title }}</h3>
 					<p class="work__filter_item__overlay_text">{{ filterItem.text }}</p>
@@ -30,32 +30,32 @@
 				selected: undefined,
 				filterItems: [
 					{
-						img: '@/assets/filter-1.png',
+						image: 'src/assets/filter-1.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					},
 					{
-						img: '@/assets/filter-2.png',
+						image: '@/assets/filter-2.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					},
 					{
-						img: '@/assets/filter-3.png',
+						image: '@/assets/filter-3.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					},
 					{
-						img: '@/assets/filter-4.png',
+						image: '@/assets/filter-4.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					},
 					{
-						img: '@/assets/filter-5.png',
+						image: '@/assets/filter-5.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					},
 					{
-						img: '@/assets/filter-6.png',
+						image: '@/assets/filter-6.png',
 						title: 'Mobile UI',
 						text: 'Google Mail'
 					}
