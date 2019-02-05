@@ -6,7 +6,9 @@
 		</div>
 		<carousel class="choose__list" :perPageCustom="[[1170, 3],[860,2],[560, 1]]" :loop="true">
 			<slide class="choose__slide" v-for="slide in slides">
-				<img src="@/assets/choose-image-slider-1.png" alt="" class="choose__slide_img">
+				<div class="choose__slide_img_wrapper">
+					<span :class="slide.sprite" ></span>
+				</div>
 				<div class="choose__slide_description">
 					<h3 class="choose__slide_title">{{ slide.title }}</h3>
 					<p class="choose__slide_info">{{ slide.info }}</p>
@@ -22,35 +24,35 @@
 			return {
 				slides: [
 					{
-						image: '@/assets/choose-image-slider-1.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_iphone',
 						title: 'App Design',
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
 					},
 					{
-						image: '@/assets/choose-image-slider-2.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_ipad',
 						title: 'Responsive Layout',
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
 					},
 					{
-						image: '@/assets/choose-image-slider-3.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_macbook',
 						title: 'Pixel Perfect Design',
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
 					},
 					{
-						image: '@/assets/choose-image-slider-1.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_iphone',
 						title: 'App Design',
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
 					},
 					{
-						image: '@/assets/choose-image-slider-2.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_ipad',
 						title: 'Responsive Layout', 
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
 					},
 					{
-						image: '@/assets/choose-image-slider-3.png',
+						sprite: 'choose__slide_sprite choose__slide_sprite_macbook',
 						title: 'Pixel Perfect Design',
 						info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.'
-					},
+					}
 				]
 			}
 		}

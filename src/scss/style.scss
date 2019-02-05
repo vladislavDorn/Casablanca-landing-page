@@ -69,7 +69,7 @@
 }
 
 .promo {
-	background: url(../assets/promo-overlay.jpg) center top / cover no-repeat;
+	background: url(../../static/promo-overlay.jpg) center top / cover no-repeat;
 	padding: 315px 0 390px;
 	&__info {
 		text-align: center;
@@ -116,7 +116,7 @@
 }
 
 .creativity {
-	background: url(../assets/creativity-bg.jpg) center top / cover no-repeat;
+	background: url(../../static/creativity-bg.jpg) center top / cover no-repeat;
 	padding: 200px 0;
 	text-align: center;
 }
@@ -221,7 +221,7 @@
 }
 
 .help {
-	background: url(../assets/help-bg.jpg) center top / cover no-repeat;
+	background: url(../../static/help-bg.jpg) center top / cover no-repeat;
 	padding: 200px 0;
 	text-align: center;
 }
@@ -335,7 +335,7 @@
 		transform: translateX(-50%);
 	}
 	&__item_overlay__key_icon {
-		background: url(../assets/link-icon.png);
+		background: url(../../static/link-icon.png);
 		width: 32px;
 		height: 32px;
 		display: block;
@@ -365,9 +365,9 @@
 
 .video {
 	padding: 200px 0;
-	background: url(../assets/video-bg.jpg) center top / cover no-repeat;
+	background: url(../../static/video-bg.jpg) center top / cover no-repeat;
 	&__show_modal {
-		background-image: url(../assets/modal-open-icon.png);
+		background-image: url(../../static/modal-open-icon.png);
 		width: 64px;
 		height: 64px;
 		display: block;
@@ -442,5 +442,57 @@
 	&__list {
 		margin-top: 95px;
 	}
+	&__slide {
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0 25px; 
+	}
+	&__slide_img_wrapper {
+		margin-bottom: 40px;
+	}
+	&__slide_sprite {
+		background: url(../../static/choose-sprite.png);
+		display: block;
+		height: 152px;
+		margin: 0 auto;
+		vertical-align: bottom;
+	}
+	&__slide_sprite_iphone {
+		width: 72px;
+	}
+	&__slide_sprite_ipad {
+		width: 170px;
+		background-position: -350px 0;
+	}
+	&__slide_sprite_macbook {
+		width: 230px;
+		background-position: -720px 0;
+	}
+	&__slide_title {
+		font-family: Amble-Regular;
+		font-size: 24px;
+		margin-bottom: 35px;
+		color: #222;
+	}
+	&__slide_info {
+		font-family: Amble-Regular;
+		font-size: 16px;
+		line-height: 30px;
+		color: #222;
+	}
 }
+.choose .VueCarousel-dot--active {
+	background: #d87843!important;
+}
+.choose .VueCarousel-dot {
+	border: 2px solid #fff!important;
+	margin-right: 10px;
+	outline: none!important;
+	width: 12px!important;
+	height: 12px!important;
+	padding: 0!important;
+	background: #d5d5d5;
+}
+
+
 

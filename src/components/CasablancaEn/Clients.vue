@@ -6,7 +6,7 @@
 			</div>
 			<div class="clients__list">
 				<div class="clients__item" v-for="clientsItem in clientsItems">
-					<img src="../../assets/clients-1.png" class="clients__item_image" alt="Clients">
+					<img :src="clientsItem.image" class="clients__item_image" alt="Clients">
 				</div>
 			</div>
 		</div>
@@ -19,19 +19,19 @@
 			return {
 				clientsItems: [
 					{
-						image: 'src/assets/clients-1.png'
+						image: 'static/clients-1.png'
 					},
 					{
-						image: 'src/assets/clients-2.png'
+						image: 'static/clients-2.png'
 					},
 					{
-						image: 'src/assets/clients-3.png'
+						image: 'static/clients-3.png'
 					},
 					{
-						image: 'src/assets/clients-4.png'
+						image: 'static/clients-4.png'
 					},
 					{
-						image: 'src/assets/clients-5.png'
+						image: 'static/clients-5.png'
 					}
 				]
 			}

@@ -6,7 +6,7 @@
 		</div>
 		<div class="about__list">
 			<div class="about__item" v-for="aboutItem in aboutItems">
-				<img src="../../assets/about-1.jpg" alt="Employees">
+				<img :src="aboutItem.image" alt="Employees">
 				<div class="about__item_overlay">
 					<div class="about__item_overlay__link"><span class="about__item_overlay__key_icon"></span></div>
 					<div class="about__item_overlay__decription">
@@ -29,17 +29,17 @@
 			return {
 				aboutItems: [
 					{
-						image: '@/assets/about-1.jpg',
+						image: 'static/about-1.jpg',
 						title: 'John',
 						description: 'CEO/Founder'
 					},
 					{
-						image: '@/assets/about-2.jpg',
+						image: 'static/about-2.jpg',
 						title: 'Ella',
 						description: 'Service Director'
 					},
 					{
-						image: '@/assets/about-3.jpg',
+						image: 'static/about-3.jpg',
 						title: 'Nora',
 						description: 'Web-Design'
 					}
