@@ -4,8 +4,8 @@
 			<h2 class="choose__title section-title">Why choose us</h2>
 			<p class="choose__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 		</div>
-		<carousel class="choose__list" :perPageCustom="[[1170, 3],[860,2],[560, 1]]" :loop="true">
-			<slide class="choose__slide" v-for="slide in slides">
+		<carousel class="choose__list" :perPageCustom="[[850, 3], [660, 2], [320, 1]]">
+			<slide class="choose__slide" v-for="(slide, index) in slides" :key="index">
 				<div class="choose__slide_img_wrapper">
 					<span :class="slide.sprite" ></span>
 				</div>
