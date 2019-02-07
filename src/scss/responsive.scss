@@ -29,6 +29,10 @@
 			padding-left: 100px;
 		}
 	}
+	.modal__video {
+		width: 800px;
+		height: 400px;
+	}
 }
 @media (max-width: 1025px) {
 	.contact {
@@ -68,6 +72,10 @@
 			margin: 20px;
 		}
 	}
+	.modal__video {
+		width: 500px;
+		height: 300px;
+	}
 }
 @media (max-width: 775px) {
 	.promo {
@@ -93,6 +101,10 @@
 		&__item_right__form__submit {
 			margin: 0 auto;
 		}
+	}
+	.modal__video {
+		width: 400px;
+		height: 200px;
 	}
 }
 @media (max-width: 660px) {
@@ -131,6 +143,14 @@
 	}
 	.contact__item_right {
 		padding: 50px;
+	} 
+	.modal__video {
+		width: 400px;
+		height: 180px;
+	}
+	.modal-off {
+		top: 30px;
+		right: 10px;
 	}
 }
 @media (max-width: 400px) {
@@ -159,5 +179,9 @@
 	}
 	.work__filter_item {
 		width: 300px;
+	}
+	.modal__video {
+		width: 300px;
+		height: 150px;
 	}
 }
