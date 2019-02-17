@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<div class="header__navbar" @click="show = !show">
-			<span :class="navbarItem.item" v-for="navbarItem in navbarItems"></span>
+			<span :class="navbarItem.item" v-for="(navbarItem, index) in navbarItems" :key="index"></span>
 		</div>
 		<ul class="header__nav" v-if="show">
 			<li class="header__nav_item"><a href="#" class="header__nav_link">Home</a></li>

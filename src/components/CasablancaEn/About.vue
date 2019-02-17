@@ -5,7 +5,7 @@
 			<p class="about__head_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 		</div>
 		<div class="about__list">
-			<div class="about__item" v-for="aboutItem in aboutItems">
+			<div class="about__item" v-for="(aboutItem, index) in aboutItems" :key="index">
 				<img :src="aboutItem.image" alt="Employees">
 				<div class="about__item_overlay">
 					<div class="about__item_overlay__link"><span class="about__item_overlay__key_icon"></span></div>
